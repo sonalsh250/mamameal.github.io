@@ -1,0 +1,326 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Navigation bar: logo and image  */
+#logo{
+    margin: 8px 59px;
+}
+#logo img{
+    height: 100px;
+    margin: 8px 8px;
+}
+
+/* Navigation Bar: List styling  */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 3px 20px;
+    color: white;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 340px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../images/back6.jpeg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85; 
+}
+#home h1{
+    color: rgb(255, 255, 255);
+    /* color: rgb(255, 145, 0); */
+    text-align: center;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    /* text-shadow: 2px 2px rgb(255, 145, 0); */
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+ /* Cuisines */
+
+#cuisine{
+    margin: 20px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center;
+    align-items: center; */
+}
+#cuisine .box{
+    border: 2px solid rgb(255, 255, 255);
+}
+#cuisine .box:hover{
+    /* border: 2px solid black; */
+    /* display: flex; */
+    /* padding: 34px;
+    margin: 3px 6px;
+    border-radius: 20px; */
+    cursor: pointer;
+    border: 2px solid rgb(1, 225, 255);
+    box-shadow: 5px 5px 5px 5px  rgb(83, 220, 238);
+}
+#cuisine .box img{
+    margin: 10px 11px 6px 19px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    height: 420px;
+    border-radius: 5%;
+}
+#cuisine .box p{
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* SERVICES */
+/* #services{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services .service-box{
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
+#services .service-box img{
+    margin: 10px 11px 6px 19px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    height: 350px;
+    border-radius: 7%;
+} */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .service-box{
+    border: 2px solid rgb(255, 255, 255);
+    /* border: 2px solid rgb(0, 0, 0); */
+    margin: 10px 10px 10px 10px
+}
+#services .service-box:hover{
+    cursor: pointer;
+    border: 2px solid rgb(1, 225, 255);
+    box-shadow: 5px 5px 5px 5px  rgb(83, 220, 238);
+}
+#services .service-box img{
+    height: 350px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    height: 350px;
+    border-radius: 7%;
+}
+/* About us  */
+#about{
+    /* display: flex; */
+    /* border: 2px solid black; */
+}
+#about p{
+    padding: 9px;
+}
+#about img{
+    height: 350px;
+    display: block;
+    margin: auto;
+    padding: 9px;
+    border-radius: 5%;
+}
+
+/* Contact us */
+#contact-boxes{
+    margin: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-boxes .contact-box{
+    /* border: 2px solid rgb(206, 37, 37); */
+    /* border: 2px solid rgb(0, 0, 0); */
+    margin: 10px 10px 10px 10px
+}
+#img1{
+    margin: auto;
+    padding: 10px 10px 10px 113px;
+}
+#img2{
+    margin: auto;
+    padding: 10px 10px 10px 62px;
+}
+#img3{
+    margin: auto;
+    padding: 10px 10px 10px 30px;
+}
+#img4{
+    margin: auto;
+    padding: 10px 10px 10px 73px;
+}
+.contact-box p{
+    padding: 10px;
+}
+
+/* Login/SignUp */
+#login{
+    position: relative;
+}
+#login::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../images/backgrounds/back6.jpg') no-repeat center center/cover;
+}
+#login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#login-form input{
+    width: 100%;
+    height: 33px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    /* border-color: rgb(228, 0, 0); */
+}
+#login-form form{
+    width: 40%;
+    /* border-radius: 10px; */
+}
+#login-form label{
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+}
+
+/* footer */
+footer{
+    padding: 9px 20px;
+    background-color: rgb(70, 129, 2);
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-primary-center{
+    color: rgb(71, 63, 63);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 197px 230px 20px 230px;
+}
+.h-primary-center2{
+    color: rgb(71, 63, 63);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 70px 230px 20px 230px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary-center{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.h-secondary-center2{
+    text-align: center;
+    /* margin: 5px;
+    padding: 5px; */
+    font-family: 'Roboto', sans-serif;
+}
+.btn{
+    padding: 10px 10px;
+    border: 2px solid rgb(255, 255, 255);
+    /* background-color: rgb(255, 145, 0); */
+    background-color: rgb(70, 129, 2);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.center{
+    text-align: center ;
+    font-family: 'Roboto', sans-serif;
+}
+
